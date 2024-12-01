@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+body{
+  background: linear-gradient(to right, rgba(181, 250, 255, 0.47), #a5cfff6e, rgba(255, 163, 163, 0.421), rgba(255, 214, 163, 0.163));
+  background-size: 500% 100%
+  animation: anima 1.5s infinite linear alternate;
+}
+
+@keyframes anima{
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.cabecalho {
+    margin: 25px 125px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.cabecalho.fixed {
+    position: fixed;
+    top: 0;
+    margin: 0 125px; /* Remove o espaçamento quando fixo */
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cabecalho img{
+    width: 64px;
+    height: 36px;
+    padding: 0;
+}
+
+.cabecalho nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.cabecalho nav ul li a{
+    margin: 0 10px;
+    padding: 15px 15px;
+    border-radius: 25px;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+.cabecalho nav ul li a:hover{
+    padding: 15px 15px;
+    background-color: rgba(255, 255, 255, 0.188);
+    backdrop-filter: blur(10px);
+    color: black;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.133);
+}
+
+.cabecalho a.pedido{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cabecalho a.pedido span{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    background: radial-gradient(circle, rgba(0, 94, 255, 0.556), rgba(22, 8, 150, 0.573));
+    margin: 0px 10px;
+    border-radius: 12px;
+}
+
+.cabecalho a.pedido span:hover{
+    background-color: rgba(47, 0, 255, 0.477);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    transition: .4s ease-in-out;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.159);
+
+}
